@@ -3,7 +3,7 @@
 A web application that allows users to save their accounts credentials like usernames and passwords. Can also generate passwords for users.
 ## Prerequisites
 ### Getting the project
-1. Git hub account
+1. You require a Git hub account
     
     To create a git hub account [click here](https://github.com/)
 2. install git in your machine
@@ -13,9 +13,9 @@ $ sudo apt-get install git-all
 ### Setup
 To access this project on your local machine, you can clone it using these steps
 1. Open your terminal
-1. Use this command to clone `$ https://github.com/changawa-antony/password-locker
+1. Use this command to clone  https://github.com/changawa-antony/password-locker
 ```
-$ git clone https://github.com/changawa-antony/dietSup-project/tree/master
+$ git clone https://github.com/changawa-antony/password-locker
 ```
  This will clone the repositoty into your local folder
 
