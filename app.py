@@ -40,3 +40,10 @@ class allacounts:
        Creates the new accounts
        '''
        self.accounts.append(Account(account, username, password))
+
+    def search_account(self, filter):
+     
+      '''
+      Searches the allacounts and find the match
+      '''
+      return [ account for account in self.accounts if account.match(filter)] #returns the value of the searched account
