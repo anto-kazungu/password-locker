@@ -76,7 +76,7 @@ class Menu:
 
  def add_account(self):
  
-     ''' Add a new diary in the diarybook '''
+     ''' Add a new account '''
  
      account = input("Enter a account:         " )
      username = input("Enter a username:         " )

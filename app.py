@@ -28,7 +28,7 @@ class allacounts:
     '''
  
     def __init__(self):
- 
+     
         '''
         Initialization of the allacount list
         '''
