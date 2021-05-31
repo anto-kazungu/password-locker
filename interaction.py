@@ -104,3 +104,15 @@ class Menu:
      name = input()
      accounts.remove(name)
      print(f'Sucessfully removed {name}')
+
+
+ #Random password generator , uses the imported modules random and string
+ def password_generator(self):
+
+     ''' 
+     Search for a specific diary in the diarybook using the match filter
+     '''
+     length = int(input('\nEnter the length of password: '))
+     all = string.ascii_letters + string.digits + string.punctuation
+     x = "".join(random.sample(all, length))
+     print(f'Generated password is {x}')
