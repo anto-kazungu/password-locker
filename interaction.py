@@ -67,3 +67,17 @@ class Menu:
      for account in accounts:
  
        print("{0}".format(account.account))
+
+ #For adding new accounts to the array
+
+ def add_account(self):
+ 
+     ''' Add a new diary in the diarybook '''
+ 
+     account = input("Enter a account:         " )
+     username = input("Enter a username:         " )
+     password = input("Enter a password:         " )
+ 
+     self.accountdata.new_account(account, username, password)
+ 
+     print("Your account has been added")
