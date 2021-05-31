@@ -62,7 +62,7 @@ class Menu:
  
  def show_accounts(self, accounts=None):
  
-     ''' Display all diaries in diarybook '''
+     ''' Display all accounts '''
 
      if not accounts:
  
