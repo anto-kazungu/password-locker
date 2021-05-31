@@ -33,3 +33,10 @@ class allacounts:
         Initialization of the allacount list
         '''
         self.accounts = []
+
+    def new_account(self, account, username, password=''): #initialization of the account
+ 
+       '''
+       Creates the new accounts
+       '''
+       self.accounts.append(Account(account, username, password))
