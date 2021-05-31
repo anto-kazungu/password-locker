@@ -53,3 +53,17 @@ class Menu:
            else:
  
               print("{0} is not a valid choice".format(choice))
+
+ # For displaying all the accounts in the array
+ 
+ def show_accounts(self, accounts=None):
+ 
+     ''' Display all diaries in diarybook '''
+
+     if not accounts:
+ 
+        accounts = self.accountdata.accounts
+ 
+     for account in accounts:
+ 
+       print("{0}".format(account.account))
