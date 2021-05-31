@@ -32,3 +32,24 @@ class Menu:
              6.Quit
  
              """)
+
+ # For directing the user selection to the required task
+
+ def run(self):
+ 
+     ''' Display menu and respond to user choices '''
+     while True:
+ 
+           self.display_menu()
+ 
+           choice = input("Enter an option: " )
+ 
+           action = self.choices.get(choice)
+ 
+           if action:
+ 
+                action()
+ 
+           else:
+ 
+              print("{0} is not a valid choice".format(choice))
