@@ -17,3 +17,18 @@ class Menu:
            "5" : self.password_generator,
            "6" : self.quit
         }
+
+ def display_menu(self): #Display for the menu items
+     
+       print(""" 
+
+             Notebook Menu  
+ 
+             1. Show accounts
+             2. Add accounts
+             3. Search account
+             4. Delete account
+             5. Generate password
+             6.Quit
+ 
+             """)
