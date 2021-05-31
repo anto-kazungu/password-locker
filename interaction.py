@@ -81,3 +81,14 @@ class Menu:
      self.accountdata.new_account(account, username, password)
  
      print("Your account has been added")
+
+ #Picks the users input and use it to search the accounts
+ def search_account(self):
+ 
+     ''' Search for a specific diary in the diarybook using the match filter '''
+ 
+     filter = input("Search for:  ")
+ 
+     searchaccount = self.accountdata.search_account(filter)
+ 
+     self.show_accounts(searchaccount)
