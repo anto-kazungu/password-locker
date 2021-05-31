@@ -92,3 +92,15 @@ class Menu:
      searchaccount = self.accountdata.search_account(filter)
  
      self.show_accounts(searchaccount)
+
+ #For deleting the accounts in the list array
+
+ def delete_account(self,accounts):
+
+     ''' 
+     Search for a specific diary in the diarybook using the match filter
+     '''
+     print("Enter the item you want to delete")
+     name = input()
+     accounts.remove(name)
+     print(f'Sucessfully removed {name}')
