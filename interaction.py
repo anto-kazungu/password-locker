@@ -119,3 +119,14 @@ class Menu:
      all = string.ascii_letters + string.digits + string.punctuation
      x = "".join(random.sample(all, length))
      print(f'Generated password is {x}')
+
+
+  #Quiting the program if selected
+ def quit(self):
+ 
+      '''
+      Quit or terminate the program
+      '''
+      print("Goodbye")
+ 
+      sys.exit(0)
