@@ -18,3 +18,18 @@ class Account:
         Check match when search is done.
         '''  
         return filter in self.username or self.password
+
+#class for all the accounts created
+
+class allacounts:   
+ 
+    '''
+    Class for all the accounts created
+    '''
+ 
+    def __init__(self):
+ 
+        '''
+        Initialization of the allacount list
+        '''
+        self.accounts = []
