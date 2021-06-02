@@ -1,17 +1,18 @@
+
 import sys
 import random #for generating characters
 import string #for generating random strings
 from app import allacounts
 
 
-class Menu:
-     
+class Menu:   
  '''
  Class for the Menu items
  '''
+
  def __init__(self):
       self.accountdata = allacounts() #imported class from app module
- 
+
       self.choices = {    #menu items that will be accessed 
  
            "1" : self.show_accounts,
@@ -26,14 +27,14 @@ class Menu:
      
        print(""" 
 
-             Notebook Menu  
- 
+             Menu  
+                             
              1. Show accounts
              2. Add accounts
              3. Search account
              4. Delete account
              5. Generate password
-             6.Quit
+             6. Quit
  
              """)
 
@@ -41,28 +42,31 @@ class Menu:
 
  def run(self):
  
-     ''' Display menu and respond to user choices '''
-     while True:
+    ''' Display menu and respond to user choices '''
+    while True:
+        
+        self.display_menu()
+        choice = input("Enter an option: " )
+        action = choice.get(choice)
  
-           self.display_menu()
- 
-           choice = input("Enter an option: " )
- 
-           action = self.choices.get(choice)
- 
-           if action:
- 
-                action()
- 
-           else:
+        if action:
+
+            action()
+
+        else:
  
               print("{0} is not a valid choice".format(choice))
 
  # For displaying all the accounts in the array
+
+
+
  
  def show_accounts(self, accounts=None):
  
-     ''' Display all accounts '''
+     '''
+     Display all accounts
+     '''
 
      if not accounts:
  
@@ -70,7 +74,7 @@ class Menu:
  
      for account in accounts:
  
-       print("{0}".format(account.account))
+       print(account.account , account.username, account.password)
 
  #For adding new accounts to the array
 
