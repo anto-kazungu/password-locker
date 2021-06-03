@@ -93,7 +93,7 @@ class Menu:
  #Picks the users input and use it to search the accounts
  def search_account(self):
  
-     ''' Search for a specific diary in the diarybook using the match filter '''
+     ''' Search for a specific account in the account list using the match filter '''
  
      filter = input("Search for:  ")
  
@@ -106,7 +106,7 @@ class Menu:
  def delete_account(self,accounts):
 
      ''' 
-     Search for a specific diary in the diarybook using the match filter
+     Search for a specific account in the account list using the match filter
      '''
      print("Enter the item you want to delete")
      name = input()
@@ -118,7 +118,7 @@ class Menu:
  def password_generator(self):
 
      ''' 
-     Search for a specific diary in the diarybook using the match filter
+     Generate password for using in the account creation
      '''
      length = int(input('\nEnter the length of password: '))
      all = string.ascii_letters + string.digits + string.punctuation
