@@ -1,17 +1,18 @@
 
 import sys
+import app
 import random #for generating characters
 import string #for generating random strings
-from app import allacounts
-
+from app import Credentials
 
 class Menu:   
+    
  '''
  Class for the Menu items
  '''
 
  def __init__(self):
-      self.accountdata = allacounts() #imported class from app module
+      self.accountdata = Credentials() #imported class from app module
 
       self.choices = {    #menu items that will be accessed 
  
@@ -26,7 +27,6 @@ class Menu:
  def display_menu(self): #Display for the menu items
      
        print(""" 
-
              Menu  
                              
              1. Show accounts
@@ -47,7 +47,7 @@ class Menu:
         
         self.display_menu()
         choice = input("Enter an option: " )
-        action = choice.get(choice)
+        action = self.choices.get(choice)
  
         if action:
 

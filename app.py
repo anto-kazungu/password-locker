@@ -1,6 +1,6 @@
 #class for a single account
 
-class Account:
+class User:
  
    '''Class for account'''
  
@@ -21,8 +21,7 @@ class Account:
 
 #class for all the accounts created
 
-class allacounts:   
- 
+class Credentials:   
     '''
     Class for all the accounts created
     '''
@@ -39,7 +38,7 @@ class allacounts:
        '''
        Creates the new accounts
        '''
-       self.accounts.append(Account(account, username, password))
+       self.accounts.append(User(account, username, password))
 
     def search_account(self, filter):
      
