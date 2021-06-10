@@ -7,7 +7,7 @@ class User:
    def __init__(self, account, username, password=' '):
  
        '''
-       Initialize a new diary with memo and tags. Creation date of new notes and id are automatically set
+       Initialize a new accounts class
        '''
        self.account = account
        self.username = username
