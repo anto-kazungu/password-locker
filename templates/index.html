@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management</title>
+</head>
+<body>
+    <h1>Account Management System</h1>
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="#add-account">Add Account</a></li>
+        <li><a href="#search-account">Search Account</a></li>
+        <li><a href="#generate-password">Generate Password</a></li>
+    </ul>
+
+    <section id="add-account">
+        <h3>Add a New Account</h3>
+        <form method="post" action="/add">
+            <label for="account">Account:</label>
+            <input type="text" id="account" name="account" required><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <button type="submit">Add Account</button>
+        </form>
+    </section>
+
+    <section id="search-account">
+        <h3>Search Account</h3>
+        <form method="get" action="/search">
+            <label for="filter">Search Term:</label>
+            <input type="text" id="filter" name="filter" required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="generate-password">
+        <h3>Generate a Random Password</h3>
+        <form method="post" action="/generate-password">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" name="length" required min="1">
+            <button type="submit">Generate</button>
+        </form>
+    </section>
+</body>
+</html>
